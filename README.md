@@ -102,38 +102,38 @@ Extracted data is validated and saved in the `output/` directory as CSV/JSON.
 -----------------------------------------------------------------
 pip install -r requirements.txt
 
-# Clone project
+### Clone project
 
 git clone https://github.com/Dhaanesh26/DataExtraction.git
 cd DataExtraction
 
-# Update configurations
+### Update configurations
 
 config/database_config.yaml
 config/api_config.yaml
 
-# Run MySQL extraction:
+### Run MySQL extraction:
 
 python3 src/mysql_extractor.py
 
-# Run API extraction:
+### Run API extraction:
 
 python3 src/api_extractor.py
 
-# Usage
+### Usage
 
 output/mysql/
 output/api/
 
-# Logs are saved under:
+### Logs are saved under:
 
 logs/data_extraction.log
 
-# Configurable via:
+### Configurable via:
 
 config/incremental_config.yaml
 
-# Docker setup:
+### Docker setup:
 
 docker-compose up -d
 -----------------------------------------------------------------
@@ -152,7 +152,7 @@ docker-compose up -d
 
 - Unit Testing + CI/CD Integration
 
-Contact
+## Contact
 
 Dhaanesh
 📩 Email: (dhaanesh.suresh@gmail.com)
@@ -160,7 +160,7 @@ Dhaanesh
 
 Repo Link: https://github.com/Dhaanesh26/DataExtraction
 
-Acknowledgments
+## Acknowledgments
 
 - Python Docs
 
