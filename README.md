@@ -74,3 +74,58 @@ Extracted data is validated and saved in the `output/` directory as CSV/JSON.
 <!-- ARCHITECTURE -->
 ## Architecture
 
+    ┌────────────┐        ┌───────────┐
+    │  MySQL DB  │        │ REST API  │
+    └─────┬──────┘        └─────┬─────┘
+          │                       │
+          ▼                       ▼
+    ┌──────────────────────────────────┐
+    │         ETL Pipeline             │
+    │    (Python + Config Driven)      │
+    └─────────────────┬────────────────┘
+                      ▼
+              ┌──────────────┐
+              │ Output (.csv)│
+              │ Output (.json)│
+              └──────────────┘
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- BUILT WITH -->
+## Built With
+
+* Python 3.9+
+* Pandas
+* MySQL Connector
+* Requests API Library
+* PyYAML
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+### Prerequisites
+```sh
+pip install -r requirements.txt
+
+
+git clone https://github.com/Dhaanesh26/DataExtraction.git
+cd DataExtraction
+
+config/database_config.yaml
+config/api_config.yaml
+
+python3 src/mysql_extractor.py
+
+python3 src/api_extractor.py
+
+output/mysql/
+output/api/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> <!-- INCREMENTAL LOAD SUPPORT -->
+
