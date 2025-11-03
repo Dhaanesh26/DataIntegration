@@ -1,4 +1,3 @@
-<!-- Improved compatibility of back to top link -->
 <a id="readme-top"></a>
 
 <br />
@@ -99,7 +98,8 @@ Extracted data is validated and saved in the `output/` directory as CSV/JSON.
 ## Getting Started
 
 ### Prerequisites
-```sh
+
+-----------------------------------------------------------------
 pip install -r requirements.txt
 
 Clone project
@@ -136,8 +136,9 @@ config/incremental_config.yaml
 Docker setup:
 
 docker-compose up -d
+-----------------------------------------------------------------
 
-Roadmap
+* Roadmap
 
 - MySQL Extraction
 
