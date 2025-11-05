@@ -1,6 +1,7 @@
 import boto3
 import configparser
 import psycopg2
+from pyspark.sql import SparkSession
 
 # connect to redshift cluster
 
